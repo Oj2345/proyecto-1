@@ -1,0 +1,83 @@
+.headerCont{
+    gap: 20px;
+    display: grid;
+    background-color:#F5F5F5;
+    color: #000;
+    grid-auto-rows: minmax(45px, auto);
+    grid-template-columns: 1fr 3.5fr 1fr; 
+}
+
+.texthead1{
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
+    grid-column: 2;
+    align-items: center;
+    font-weight: 500;
+    margin-top:20px;
+}
+.perfil{
+    font-weight: 700;
+}
+
+.aCol{
+    color: salmon;
+}
+
+.texthead2{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    grid-column: 2;
+    align-items: center;
+    font-weight: 500;
+}
+
+.sectionCont{
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr; 
+    gap: 10px;
+    grid-auto-rows: minmax(50px,auto);
+}
+.article{
+    display: flex;
+    grid-column: 2 ;
+    justify-content: space-between;
+    background: white;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    font-weight: 400;
+    
+}
+
+.icon{
+    width: 50px;
+}
+
+.itemTitle{
+    width: 100px;
+}
+
+.itemDate{
+    font-weight: 200;
+    color: gray;
+    
+}
+
+.itemStatusSuccess{
+    color:blueviolet ;
+}
+.itemStatusPending{
+    color:#FFC436 
+}
+.itemStatusExpired{
+    color: gray;
+}
+
+
+
+
+
