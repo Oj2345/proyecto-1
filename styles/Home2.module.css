@@ -52,32 +52,3 @@
     font-weight: 400;
     
 }
-
-.icon{
-    width: 50px;
-}
-
-.itemTitle{
-    width: 100px;
-}
-
-.itemDate{
-    font-weight: 200;
-    color: gray;
-    
-}
-
-.itemStatusSuccess{
-    color:blueviolet ;
-}
-.itemStatusPending{
-    color:#FFC436 
-}
-.itemStatusExpired{
-    color: gray;
-}
-
-
-
-
-

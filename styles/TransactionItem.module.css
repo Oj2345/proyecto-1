@@ -1,0 +1,40 @@
+.article{
+  display: flex;
+  grid-column: 2 ;
+  justify-content: space-between;
+  background: white;
+  margin: 0 10px 0 10px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px 15px 5px 15px;
+  font-weight: 400;
+  
+}
+.icon{
+  width: 50px;
+}
+
+.itemTitle, 
+.itemPrice {
+width: 100px;
+white-space: nowrap; 
+overflow: hidden; 
+text-overflow: ellipsis;
+}
+
+.itemDate{
+  width: 200px;
+  font-weight: 200;
+  color: gray;
+  
+}
+
+.success{
+  color:blueviolet ;
+}
+.pending{
+  color:#FFC436 
+}
+.expired{
+  color: gray;
+}
