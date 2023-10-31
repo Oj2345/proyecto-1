@@ -2,7 +2,7 @@ import { MonitorSmartphone, ShoppingCart } from "lucide-react";
 import Head from "next/head";
 import { Poppins } from "next/font/google";
 import TransactionItem from "@/components/TransactionItem";
-import HeaderItem from "@/components/HeaderItem";
+import Layout from "@/components/Layout";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,7 +19,7 @@ export default function HomePage() {
         />
         <title>Proyecto-Test</title>
       </Head>
-        <HeaderItem />
+        <Layout/>
       <main className={poppins.className}>
       <TransactionItem
         icon= {<ShoppingCart />}
