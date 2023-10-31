@@ -1,0 +1,31 @@
+.Content{
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    gap: 5px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.HeadText1{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2;
+    align-items: center;
+}
+
+.HeadText2{
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2;
+    align-items: center;
+}
+
+.ItemPerfil{
+    font-weight: 700;
+}
+
+.ItemViewAll{
+    color: salmon;
+}
