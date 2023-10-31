@@ -1,4 +1,4 @@
-import style from "@/styles/HeaderItem.module.css"
+import style from "@/styles/Header.module.css"
 
 import { Poppins } from "next/font/google";
 
