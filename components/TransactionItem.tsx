@@ -1,6 +1,6 @@
-import styles from "@/styles/TransactionItem.module.css";
+import style from "@/styles/TransactioItem.module.css"
 
-export interface ItemListProps {
+export interface TransactionItemProps {
   icon: React.ReactNode;
   title: string;
   date: string;
@@ -14,16 +14,18 @@ export default function TransactionItem({
   date,
   price,
   status,
-}: ItemListProps) {
+}: TransactionItemProps) {
   return (
-    <article className={styles.article}>
-      <div className={styles.icon}>{icon}</div>
-      <p className={styles.itemTitle}>{title}</p>
-      <p className={styles.itemDate}>{date}</p>
-      <p className={styles.itemPrice}>$ {price}</p>
-      <a href="#" className={`${styles.itemStatus} ${styles[status]}`}>
+    <section className={style.Content}>
+    <article className={style.article}>
+    <div className={style.icon}>{icon}</div>
+    <p className={style.itemTitle}>{title}</p>
+    <p className={style.itemDate}>{date}</p>
+    <p className={style.itemPrice}>${price}</p>
+    <a href="#" className={`${style.itemStatus} ${style[status]}`}>
         {status}
       </a>
     </article>
+    </section>
   );
 }
