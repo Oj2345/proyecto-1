@@ -8,13 +8,12 @@ const poppins = Poppins({
   });
 
 export interface HeaderItemProps{
-   Children?:React.ReactNode ;
+   Children:React.ReactNode ;
 };
 
 export default function HeaderItem ({
     Children,
     
-
 }: HeaderItemProps) {
     return(
         <header className={`${style.Content} ${poppins.className}`}>
