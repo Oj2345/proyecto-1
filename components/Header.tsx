@@ -1,26 +1,27 @@
-import style from "@/styles/Header.module.css"
+import style from "@/styles/Header.module.css";
 
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
-    subsets: ["latin"],
-    weight: ["200", "300", "400", "500"],
-  });
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500"],
+});
 
-
-export default function Header (
-) {
-    return(
-        <header className={`${style.Content} ${poppins.className}`}>
-        <div className={style.HeadText1}>
-        <p className={style.ItemTitle}>Zapay</p>
-        <a href="#" className={style.ItemPerfil}>Perfil</a> </div>
-        <div className={style.HeadText2}>
-        <p className={style.ItemTitle}>Lasted payments</p>
-        <a href="#" className={style.ItemViewAll}>
-        viewAll
-        </a></div>
-        </header>
-    )
+export default function Header() {
+  return (
+    <header className={`${style.content} ${poppins.className}`}>
+      <div className={style.Text1}>
+        <p className={style.Title}>Zapay</p>
+        <a href="#" className={style.Perfil}>
+          Perfil
+        </a>{" "}
+      </div>
+      <div className={style.Text2}>
+        <p className={style.Title}>Lasted payments</p>
+        <a href="#" className={style.viewAll}>
+          viewAll
+        </a>
+      </div>
+    </header>
+  );
 }
-
