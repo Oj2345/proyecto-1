@@ -7,7 +7,7 @@ export interface DetailsTransactionProps {
   date: string;
   price: number;
 }
-export default function Transaction({
+export default function DetailsTransaction({
   icon,
   title,
   date,
