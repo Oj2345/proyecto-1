@@ -10,13 +10,13 @@ const poppins = Poppins({
 export default function Header() {
   return (
     <header className={`${style.content} ${poppins.className}`}>
-      <div className={style.Text1}>
+      <div className={style.text1}>
         <p className={style.Title}>Zapay</p>
-        <a href="#" className={style.Perfil}>
+        <a href="#" className={style.perfil}>
           Perfil
-        </a>{" "}
+        </a>
       </div>
-      <div className={style.Text2}>
+      <div className={style.text2}>
         <p className={style.Title}>Lasted payments</p>
         <a href="#" className={style.viewAll}>
           viewAll
