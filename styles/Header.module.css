@@ -8,21 +8,21 @@
   font-weight: 500;
 }
 
-.Text1 {
+.text1 {
   display: flex;
   justify-content: space-between;
   grid-column: 2;
   align-items: center;
 }
 
-.Text2 {
+.text2 {
   display: flex;
   justify-content: space-between;
   grid-column: 2;
   align-items: center;
 }
 
-.Perfil {
+.perfil {
   font-weight: 700;
 }
 
