@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Header from "./Header";
 
-
 type LayoutProps = {
   children?: React.ReactNode;
   title?: string;
