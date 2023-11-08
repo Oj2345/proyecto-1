@@ -16,12 +16,6 @@ export default function Header() {
           Perfil
         </a>
       </div>
-      <div className={style.text2}>
-        <p className={style.title}>Lasted payments</p>
-        <a href="#" className={style.viewAll}>
-          viewAll
-        </a>
-      </div>
     </header>
   );
 }
