@@ -14,18 +14,6 @@
   grid-column: 2;
   align-items: center;
 }
-
-.text2 {
-  display: flex;
-  justify-content: space-between;
-  grid-column: 2;
-  align-items: center;
-}
-
 .perfil {
   font-weight: 700;
-}
-
-.viewAll {
-  color: salmon;
 }
