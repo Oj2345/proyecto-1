@@ -1,5 +1,6 @@
 import style from "@/styles/Transaction.module.css";
 
+
 export interface TransactionProps {
   icon: React.ReactNode;
   title: string;
@@ -15,6 +16,7 @@ export default function Transaction({
   price,
   status,
 }: TransactionProps) {
+
   return (
     <section className={style.content}>
       <article className={style.article}>
