@@ -1,15 +1,32 @@
 import style from "@/styles/PaymentType.module.css";
+import { MonitorSmartphone, ShoppingCart } from "lucide-react";
+
+export const types = {
+  "online-store": {
+    title: "Online store",
+    icon: <ShoppingCart />,
+  },
+
+  merchant: {
+    title: "Merchant",
+    icon: <MonitorSmartphone />,
+  },
+};
 
 export interface PaymentTypeProps {
-  icon: React.ReactNode;
-  title: string;
+  icon?: React.ReactNode;
+  title?: string;
   price: string;
+  type?: "online-store" | "merchant";
 }
 export default function PaymentType({
-  icon,
-  title,
+  title: customTitle,
+  icon: customIcon,
   price,
+  type = "online-store",
 }: PaymentTypeProps) {
+  const title = customTitle || types[type].title;
+  const icon = customIcon || types[type].icon;
   return (
     <section className={style.content}>
       <div className={style.contentText}>
