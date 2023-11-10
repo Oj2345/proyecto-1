@@ -1,22 +1,25 @@
 import style from "@/styles/Transaction.module.css";
-
+import { types } from "./PaymentType";
 
 export interface TransactionProps {
-  icon: React.ReactNode;
-  title: string;
+  icon?: React.ReactNode;
+  title?: string;
   date: string;
   price: number;
   status: "success" | "pending" | "expired";
+  type?: "online-store" | "merchant";
 }
 
 export default function Transaction({
-  icon,
-  title,
+  icon: customIcon,
+  title: customTitle,
   date,
   price,
   status,
+  type = "online-store",
 }: TransactionProps) {
-
+  const title = customTitle || types[type].title;
+  const icon = customIcon || types[type].icon;
   return (
     <section className={style.content}>
       <article className={style.article}>
