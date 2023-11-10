@@ -1,5 +1,5 @@
 import style from "@/styles/TransactionDetails.module.css";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronUp } from "lucide-react";
 
 export interface TransactionDetailsProps {
   title: string;
