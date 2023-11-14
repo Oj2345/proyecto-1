@@ -1,7 +1,7 @@
 import style from "@/styles/TransactionDetails.module.css";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { Fragment, useState } from "react";
-
+import { Fragment } from "react";
+import useToggle from "@/hooks/useToggle";
 export interface TransactionDetailsProps {
   title: string;
   icon: React.ReactNode;
@@ -63,15 +63,4 @@ export default function TransactionDetails({
       </div>
     </section>
   );
-}
-
-export function useToggle() {
-  const [toggle, setToggle] = useState(false);
-  const onChangeToggle = () => {
-    setToggle(!toggle);
-  };
-  return {
-    toggle,
-    onChangeToggle,
-  };
 }
