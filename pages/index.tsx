@@ -21,22 +21,19 @@ export default function HomePage() {
           </div>
         </section>
         <Transaction
-          icon={<ShoppingCart />}
-          title="Online Store"
+          type="online-store"
           date="Jul 7,2023 at 11:55"
           price={60.0}
           status="success"
         />
         <Transaction
-          icon={<MonitorSmartphone />}
-          title="Merchant"
+          type="merchant"
           date="Jul 7,2023 at 11:55"
           price={100.0}
           status="pending"
         />
         <Transaction
-          icon={<ShoppingCart />}
-          title="Online Store"
+          type="online-store"
           date="Jul 7,2023 at 11:55"
           price={23.0}
           status="expired"
