@@ -19,12 +19,11 @@
 .article {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
+  margin: 15px;
 }
 
 .text {
   color: gray;
-  margin-top: 5px;
 }
 
 .title {
@@ -32,14 +31,14 @@
   font-size: 18px;
 }
 
-.hash{
+.hash {
   margin-right: 10px;
 }
-.adress{
+.adress {
   margin-right: 10px;
 }
 
-.icon svg{
+.icon svg {
   color: gray;
   width: 23px;
   height: 23px;
@@ -59,12 +58,14 @@
   display: flex;
 }
 
-.button{
+.button {
   background: white;
   color: gray;
   border: none;
   cursor: pointer;
 }
 
-
-
+.article1 {
+  display: flex;
+  justify-content: space-between;
+}
