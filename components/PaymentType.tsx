@@ -16,7 +16,7 @@ export const types = {
 export interface PaymentTypeProps {
   icon?: React.ReactNode;
   title?: string;
-  price: string;
+  price: number;
   type?: "online-store" | "merchant";
 }
 export default function PaymentType({
@@ -35,7 +35,7 @@ export default function PaymentType({
           <p className={style.title}>{title}</p>
         </div>
         <a href="#" className={style.price}>
-          {price}
+          ${price}
         </a>
       </div>
     </section>
