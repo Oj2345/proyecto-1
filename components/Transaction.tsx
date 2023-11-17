@@ -1,5 +1,7 @@
 import style from "@/styles/Transaction.module.css";
 import { types } from "./PaymentType";
+import Link from "next/link";
+import transaction from "@/pages/transaction/[transaction]";
 
 export interface TransactionProps {
   icon?: React.ReactNode;
@@ -8,6 +10,7 @@ export interface TransactionProps {
   price: number;
   status: "success" | "pending" | "expired";
   type?: "online-store" | "merchant";
+  id: number;
 }
 
 export default function Transaction({
@@ -17,11 +20,13 @@ export default function Transaction({
   price,
   status,
   type = "online-store",
+  id
 }: TransactionProps) {
   const title = customTitle || types[type].title;
   const icon = customIcon || types[type].icon;
-  return (
-    <section className={style.content}>
+  return ( 
+  <Link href={`/transaction/${id}`}>
+    <section className={style.content}> 
       <article className={style.article}>
         <div className={style.icon}>{icon}</div>
         <p className={style.title}>{title}</p>
@@ -32,5 +37,6 @@ export default function Transaction({
         </a>
       </article>
     </section>
+    </Link>
   );
 }
