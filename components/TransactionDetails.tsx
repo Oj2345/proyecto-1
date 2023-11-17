@@ -29,7 +29,7 @@ export default function TransactionDetails({
               <ChevronDown />
             </button>
           </article>
-          {toggle && (
+          {toggle ? (
             <Fragment>
               <section className={style.contenArticle}>
                 <article className={style.article}>
@@ -58,7 +58,7 @@ export default function TransactionDetails({
                 </article>
               </section>
             </Fragment>
-          )}
+          ):null}
         </div>
       </div>
     </section>
