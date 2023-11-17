@@ -21,24 +21,50 @@ export default function HomePage() {
           </div>
         </section>
         <Transaction
+          id={1}
           type="online-store"
           date="Jul 7,2023 at 11:55"
           price={60.0}
           status="success"
         />
         <Transaction
+          id={2}
           type="merchant"
-          date="Jul 7,2023 at 11:55"
           price={100.0}
+          date="Jul 7,2023 at 11:55"
           status="pending"
         />
         <Transaction
+          id={3}
+          price={23.0}
           type="online-store"
           date="Jul 7,2023 at 11:55"
-          price={23.0}
           status="expired"
         />
       </main>
     </Layout>
   );
 }
+export const transactions = [
+  {
+    id: 1,
+    type: "online-store",
+    date: "Jul 7,2023 at 11:55",
+    price: 60.0,
+    status: "success",
+  },
+  {
+    id: 2,
+    type: "merchant",
+    price: 100.0,
+    date: "Jul 7,2023 at 11:55",
+    status: "pending",
+  },
+  {
+    id: 3,
+    type: "online-store",
+    price: 23.0,
+    date: "Jul 7,2023 at 11:55",
+    status: "expired",
+  },
+];
