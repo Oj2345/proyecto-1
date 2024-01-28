@@ -32,9 +32,9 @@ export default function Transaction({
         <p className={style.title}>{title}</p>
         <p className={style.date}>{date}</p>
         <p className={style.price}>${price}</p>
-        <a href="#" className={`${style.Status} ${style[status]}`}>
+        <p className={`${style.Status} ${style[status]}`}>
           {status}
-        </a>
+        </p>
       </article>
     </section>
     </Link>
