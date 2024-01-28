@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 
-type Transactions = {
+export type Transactions = {
   id: number;
   date: string;
   price: number;
@@ -13,6 +13,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Transactions[]>
 ) {
+  console.log(req.method)
   res.status(200).json([
     {
       id: 1,
